@@ -17,31 +17,40 @@
 <body>
 <main>
 <h1>RukaHaru Publisher プライバシーポリシー</h1>
-<p class="muted">最終更新日: 2026年10月26日</p>
+<p class="muted">最終更新日: 2026年10月27日</p>
 
-<p>RukaHaru Publisher（以下「本ツール」）は、YouTube チャンネル「ルカとハルの歴史ミステリー」の運営者が、自分のチャンネルに自分で制作した動画をアップロードするためだけに使う、個人用の非公開ツールです。一般の方には提供していません。</p>
+<p>RukaHaru Publisher（以下「本ツール」）は、YouTube チャンネル「ルカとハルの歴史ミステリー」の運営者が、自分で制作した動画を自分の YouTube チャンネルと TikTok アカウントにアップロードするためだけに使う、個人用の非公開ツールです。一般の方には提供していません。</p>
 
 <h2>1. 利用する YouTube API サービス</h2>
 <p>本ツールは YouTube API サービス（YouTube Data API v3）を使い、運営者自身のチャンネルに動画・タイトル・説明文・サムネイルをアップロードします。本ツールを使うことは、<a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に同意することを意味します。Google によるデータの取り扱いは <a href="https://policies.google.com/privacy">Google プライバシーポリシー</a>をご覧ください。</p>
 
+<h2>1-2. 利用する TikTok API</h2>
+<p>本ツールは TikTok for Developers の Login Kit と Content Posting API を使い、運営者自身の TikTok アカウントに、運営者が制作したショート動画と説明文を投稿します。TikTok によるデータの取り扱いは <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok プライバシーポリシー</a>をご覧ください。</p>
+
 <h2>2. 取得する情報</h2>
-<p>本ツールが求める権限は次の 3 つだけです。</p>
+<p>YouTube について本ツールが求める権限は次の 3 つだけです。</p>
 <ul>
   <li><code>youtube.upload</code>: 運営者のチャンネルに動画とサムネイルをアップロードするため</li>
   <li><code>youtube.readonly</code>: アップロードの前に、認証したチャンネルが運営者のチャンネルであることを確認するため（チャンネル ID を読むだけで、保存はしません）</li>
   <li><code>yt-analytics.readonly</code>: 運営者自身のチャンネルと動画の統計（再生数・視聴維持率・登録者の増減・サムネイルの表示回数とクリック率など）を読み、動画づくりの改善に使うため。集計結果は運営者にだけメールで届き、公開・共有はしません</li>
 </ul>
-<p>他のユーザーの個人情報、視聴履歴、コメント、チャンネル統計などは取得しません。</p>
+<p>TikTok について本ツールが求める権限は次の 3 つだけです。</p>
+<ul>
+  <li><code>user.info.basic</code>: 認証した TikTok アカウントが運営者のアカウントであることを確認するため（表示名と open ID を読むだけで、保存はしません）</li>
+  <li><code>video.upload</code>・<code>video.publish</code>: 運営者のアカウントにショート動画と説明文を投稿するため</li>
+</ul>
+<p>他のユーザーの個人情報、視聴履歴、コメント、チャンネル統計などは、YouTube・TikTok のどちらからも取得しません。</p>
 
 <h2>3. 情報の使い方・保存・共有</h2>
 <ul>
   <li>OAuth の認証トークンは、運営者が管理するサーバー上のファイルにだけ保存し、アクセス権を運営者本人に限っています。</li>
-  <li>トークンは動画のアップロード・サムネイルの設定・統計の読み取りにだけ使い、第三者に提供・販売・共有することはありません。</li>
+  <li>TikTok のアクセストークンとリフレッシュトークンも、同じサーバー上のファイルにだけ保存し、アクセス権を運営者本人に限っています。</li>
+  <li>トークンは動画のアップロード・投稿・サムネイルの設定・統計の読み取りにだけ使い、第三者に提供・販売・共有することはありません。</li>
   <li>本ツールは Cookie やアクセス解析を使いません。</li>
 </ul>
 
 <h2>4. アクセス権の取り消しとデータの削除</h2>
-<p><a href="https://security.google.com/settings/security/permissions">Google アカウントのセキュリティ設定</a>から、本ツールへのアクセス権をいつでも取り消せます。取り消した場合やツールの利用をやめた場合、保存していたトークンは 7 日以内に削除します。</p>
+<p><a href="https://security.google.com/settings/security/permissions">Google アカウントのセキュリティ設定</a>から、本ツールへのアクセス権をいつでも取り消せます。TikTok では、アプリの「設定とプライバシー」→「セキュリティ」→「アプリの権限」から取り消せます。取り消した場合やツールの利用をやめた場合、保存していたトークンは 7 日以内に削除します。</p>
 
 <h2>5. お問い合わせ</h2>
 <p>運営者: ルカとハルの歴史ミステリー 運営者（個人）<br>メール: <a href="mailto:sasaki@lit-up.jp">sasaki@lit-up.jp</a></p>
@@ -50,30 +59,39 @@
 
 <h1 lang="en">RukaHaru Publisher Privacy Policy</h1>
 <div lang="en">
-<p class="muted">Last updated: October 26, 2026</p>
-<p>RukaHaru Publisher ("the Tool") is a private, single-user tool used only by the operator of the YouTube channel "ルカとハルの歴史ミステリー" (Ruka &amp; Haru's History Mysteries) to upload videos the operator produced to the operator's own channel. It is not offered to the public.</p>
+<p class="muted">Last updated: October 27, 2026</p>
+<p>RukaHaru Publisher ("the Tool") is a private, single-user tool used only by the operator of the YouTube channel "ルカとハルの歴史ミステリー" (Ruka &amp; Haru's History Mysteries) to upload videos the operator produced to the operator's own YouTube channel and TikTok account. It is not offered to the public.</p>
 
 <h2>1. YouTube API Services</h2>
 <p>The Tool uses YouTube API Services (YouTube Data API v3) to upload videos, titles, descriptions and thumbnails to the operator's own channel. By using the Tool you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> for how Google handles data.</p>
 
+<h2>1-2. TikTok APIs</h2>
+<p>The Tool uses TikTok for Developers Login Kit and the Content Posting API to post short videos and captions produced by the operator to the operator's own TikTok account. See the <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok Privacy Policy</a> for how TikTok handles data.</p>
+
 <h2>2. Information collected</h2>
-<p>The Tool requests only three scopes:</p>
+<p>For YouTube, the Tool requests only three scopes:</p>
 <ul>
   <li><code>youtube.upload</code>: to upload videos and thumbnails to the operator's channel</li>
   <li><code>youtube.readonly</code>: to confirm, before uploading, that the authorized channel is the operator's own channel (the channel ID is read only and not stored)</li>
   <li><code>yt-analytics.readonly</code>: to read analytics for the operator's own channel and videos (views, retention, subscriber changes, thumbnail impressions and click-through rate) to improve future videos. Results are e-mailed only to the operator and never published or shared</li>
 </ul>
-<p>It does not access any other user's personal information, watch history, comments or channel statistics.</p>
+<p>For TikTok, the Tool requests only three scopes:</p>
+<ul>
+  <li><code>user.info.basic</code>: to confirm that the authorized TikTok account is the operator's own account (the display name and open ID are read only and not stored)</li>
+  <li><code>video.upload</code> and <code>video.publish</code>: to post short videos and captions to the operator's account</li>
+</ul>
+<p>It does not access any other user's personal information, watch history, comments or channel statistics on either YouTube or TikTok.</p>
 
 <h2>3. Use, storage and sharing</h2>
 <ul>
   <li>The OAuth token is stored only in a file on a server controlled by the operator, readable only by the operator.</li>
-  <li>The token is used only to upload videos, set thumbnails and read analytics, and is never sold, shared with or disclosed to third parties.</li>
+  <li>TikTok access and refresh tokens are likewise stored only in a file on that server, readable only by the operator.</li>
+  <li>Tokens are used only to upload and post videos, set thumbnails and read analytics, and are never sold, shared with or disclosed to third parties.</li>
   <li>The Tool uses no cookies or analytics.</li>
 </ul>
 
 <h2>4. Revoking access and deleting data</h2>
-<p>Access can be revoked at any time via the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. Stored tokens are deleted within 7 days after access is revoked or the Tool is no longer used.</p>
+<p>Access can be revoked at any time via the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. On TikTok, access can be revoked in the app under Settings and privacy → Security → Manage app permissions. Stored tokens are deleted within 7 days after access is revoked or the Tool is no longer used.</p>
 
 <h2>5. Contact</h2>
 <p>Operator: the individual operator of "ルカとハルの歴史ミステリー"<br>Email: <a href="mailto:sasaki@lit-up.jp">sasaki@lit-up.jp</a></p>
