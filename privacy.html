@@ -25,17 +25,18 @@
 <p>本ツールは YouTube API サービス（YouTube Data API v3）を使い、運営者自身のチャンネルに動画・タイトル・説明文・サムネイルをアップロードします。本ツールを使うことは、<a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に同意することを意味します。Google によるデータの取り扱いは <a href="https://policies.google.com/privacy">Google プライバシーポリシー</a>をご覧ください。</p>
 
 <h2>2. 取得する情報</h2>
-<p>本ツールが求める権限は次の 2 つだけです。</p>
+<p>本ツールが求める権限は次の 3 つだけです。</p>
 <ul>
   <li><code>youtube.upload</code>: 運営者のチャンネルに動画とサムネイルをアップロードするため</li>
   <li><code>youtube.readonly</code>: アップロードの前に、認証したチャンネルが運営者のチャンネルであることを確認するため（チャンネル ID を読むだけで、保存はしません）</li>
+  <li><code>yt-analytics.readonly</code>: 運営者自身のチャンネルと動画の統計（再生数・視聴維持率・登録者の増減・サムネイルの表示回数とクリック率など）を読み、動画づくりの改善に使うため。集計結果は運営者にだけメールで届き、公開・共有はしません</li>
 </ul>
 <p>他のユーザーの個人情報、視聴履歴、コメント、チャンネル統計などは取得しません。</p>
 
 <h2>3. 情報の使い方・保存・共有</h2>
 <ul>
   <li>OAuth の認証トークンは、運営者が管理するサーバー上のファイルにだけ保存し、アクセス権を運営者本人に限っています。</li>
-  <li>トークンは動画のアップロードにだけ使い、第三者に提供・販売・共有することはありません。</li>
+  <li>トークンは動画のアップロード・サムネイルの設定・統計の読み取りにだけ使い、第三者に提供・販売・共有することはありません。</li>
   <li>本ツールは Cookie やアクセス解析を使いません。</li>
 </ul>
 
@@ -56,17 +57,18 @@
 <p>The Tool uses YouTube API Services (YouTube Data API v3) to upload videos, titles, descriptions and thumbnails to the operator's own channel. By using the Tool you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> for how Google handles data.</p>
 
 <h2>2. Information collected</h2>
-<p>The Tool requests only two scopes:</p>
+<p>The Tool requests only three scopes:</p>
 <ul>
   <li><code>youtube.upload</code>: to upload videos and thumbnails to the operator's channel</li>
   <li><code>youtube.readonly</code>: to confirm, before uploading, that the authorized channel is the operator's own channel (the channel ID is read only and not stored)</li>
+  <li><code>yt-analytics.readonly</code>: to read analytics for the operator's own channel and videos (views, retention, subscriber changes, thumbnail impressions and click-through rate) to improve future videos. Results are e-mailed only to the operator and never published or shared</li>
 </ul>
 <p>It does not access any other user's personal information, watch history, comments or channel statistics.</p>
 
 <h2>3. Use, storage and sharing</h2>
 <ul>
   <li>The OAuth token is stored only in a file on a server controlled by the operator, readable only by the operator.</li>
-  <li>The token is used only to upload videos and is never sold, shared with or disclosed to third parties.</li>
+  <li>The token is used only to upload videos, set thumbnails and read analytics, and is never sold, shared with or disclosed to third parties.</li>
   <li>The Tool uses no cookies or analytics.</li>
 </ul>
 
