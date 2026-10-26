@@ -25,7 +25,12 @@
 <p>本ツールは YouTube API サービス（YouTube Data API v3）を使い、運営者自身のチャンネルに動画・タイトル・説明文・サムネイルをアップロードします。本ツールを使うことは、<a href="https://www.youtube.com/t/terms">YouTube 利用規約</a>に同意することを意味します。Google によるデータの取り扱いは <a href="https://policies.google.com/privacy">Google プライバシーポリシー</a>をご覧ください。</p>
 
 <h2>2. 取得する情報</h2>
-<p>本ツールが求める権限は <code>youtube.upload</code>（動画のアップロード）だけです。他のユーザーの個人情報、視聴履歴、コメント、チャンネル統計などは取得しません。</p>
+<p>本ツールが求める権限は次の 2 つだけです。</p>
+<ul>
+  <li><code>youtube.upload</code>: 運営者のチャンネルに動画とサムネイルをアップロードするため</li>
+  <li><code>youtube.readonly</code>: アップロードの前に、認証したチャンネルが運営者のチャンネルであることを確認するため（チャンネル ID を読むだけで、保存はしません）</li>
+</ul>
+<p>他のユーザーの個人情報、視聴履歴、コメント、チャンネル統計などは取得しません。</p>
 
 <h2>3. 情報の使い方・保存・共有</h2>
 <ul>
@@ -51,7 +56,12 @@
 <p>The Tool uses YouTube API Services (YouTube Data API v3) to upload videos, titles, descriptions and thumbnails to the operator's own channel. By using the Tool you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> for how Google handles data.</p>
 
 <h2>2. Information collected</h2>
-<p>The Tool requests only the <code>youtube.upload</code> scope. It does not access any other user's personal information, watch history, comments or channel statistics.</p>
+<p>The Tool requests only two scopes:</p>
+<ul>
+  <li><code>youtube.upload</code>: to upload videos and thumbnails to the operator's channel</li>
+  <li><code>youtube.readonly</code>: to confirm, before uploading, that the authorized channel is the operator's own channel (the channel ID is read only and not stored)</li>
+</ul>
+<p>It does not access any other user's personal information, watch history, comments or channel statistics.</p>
 
 <h2>3. Use, storage and sharing</h2>
 <ul>
