@@ -17,7 +17,7 @@
 <body>
 <main>
 <h1>RukaHaru Publisher プライバシーポリシー</h1>
-<p class="muted">最終更新日: 2026年10月27日</p>
+<p class="muted">最終更新日: 2026年11月6日</p>
 
 <p>RukaHaru Publisher（以下「本ツール」）は、YouTube チャンネル「ルカとハルの歴史ミステリー」の運営者が、自分で制作した動画を自分の YouTube チャンネルと TikTok アカウントにアップロードするためだけに使う、個人用の非公開ツールです。一般の方には提供していません。</p>
 
@@ -28,24 +28,26 @@
 <p>本ツールは TikTok for Developers の Login Kit と Content Posting API を使い、運営者自身の TikTok アカウントに、運営者が制作したショート動画と説明文を投稿します。TikTok によるデータの取り扱いは <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok プライバシーポリシー</a>をご覧ください。</p>
 
 <h2>2. 取得する情報</h2>
-<p>YouTube について本ツールが求める権限は次の 3 つだけです。</p>
+<p>YouTube について本ツールが求める権限は次の 5 つだけです。</p>
 <ul>
   <li><code>youtube.upload</code>: 運営者のチャンネルに動画とサムネイルをアップロードするため</li>
   <li><code>youtube.readonly</code>: アップロードの前に、認証したチャンネルが運営者のチャンネルであることを確認するため（チャンネル ID を読むだけで、保存はしません）</li>
   <li><code>yt-analytics.readonly</code>: 運営者自身のチャンネルと動画の統計（再生数・視聴維持率・登録者の増減・サムネイルの表示回数とクリック率など）を読み、動画づくりの改善に使うため。集計結果は運営者にだけメールで届き、公開・共有はしません</li>
+  <li><code>youtube</code>: アップロードした動画を、運営者のチャンネルのシリーズ別の再生リストに追加するため（再生リストの作成と動画の追加だけに使います）</li>
+  <li><code>youtube.force-ssl</code>: アップロードした動画に、運営者が用意した台本どおりの日本語字幕ファイルを追加するため、また公開された運営者自身の動画に、運営者のチャンネルとして案内のコメント（運営者が用意した文面）を 1 件投稿するため。他のユーザーのコメントの編集・削除・評価には使いません</li>
 </ul>
 <p>TikTok について本ツールが求める権限は次の 3 つだけです。</p>
 <ul>
   <li><code>user.info.basic</code>: 認証した TikTok アカウントが運営者のアカウントであることを確認するため（表示名と open ID を読むだけで、保存はしません）</li>
   <li><code>video.upload</code>・<code>video.publish</code>: 運営者のアカウントにショート動画と説明文を投稿するため</li>
 </ul>
-<p>他のユーザーの個人情報、視聴履歴、コメント、チャンネル統計などは、YouTube・TikTok のどちらからも取得しません。</p>
+<p>他のユーザーの個人情報、視聴履歴、チャンネル統計などは、YouTube・TikTok のどちらからも取得しません。運営者の動画に寄せられた公開コメントは、テーマのリクエストを把握するために公開データとして読むことがありますが、運営者だけが確認し、公開・共有はしません。</p>
 
 <h2>3. 情報の使い方・保存・共有</h2>
 <ul>
   <li>OAuth の認証トークンは、運営者が管理するサーバー上のファイルにだけ保存し、アクセス権を運営者本人に限っています。</li>
   <li>TikTok のアクセストークンとリフレッシュトークンも、同じサーバー上のファイルにだけ保存し、アクセス権を運営者本人に限っています。</li>
-  <li>トークンは動画のアップロード・投稿・サムネイルの設定・統計の読み取りにだけ使い、第三者に提供・販売・共有することはありません。</li>
+  <li>トークンは動画のアップロード・投稿・サムネイルと字幕の設定・再生リストへの追加・運営者のコメントの投稿・統計の読み取りにだけ使い、第三者に提供・販売・共有することはありません。</li>
   <li>本ツールは Cookie やアクセス解析を使いません。</li>
 </ul>
 
@@ -59,7 +61,7 @@
 
 <h1 lang="en">RukaHaru Publisher Privacy Policy</h1>
 <div lang="en">
-<p class="muted">Last updated: October 27, 2026</p>
+<p class="muted">Last updated: November 6, 2026</p>
 <p>RukaHaru Publisher ("the Tool") is a private, single-user tool used only by the operator of the YouTube channel "ルカとハルの歴史ミステリー" (Ruka &amp; Haru's History Mysteries) to upload videos the operator produced to the operator's own YouTube channel and TikTok account. It is not offered to the public.</p>
 
 <h2>1. YouTube API Services</h2>
@@ -69,24 +71,26 @@
 <p>The Tool uses TikTok for Developers Login Kit and the Content Posting API to post short videos and captions produced by the operator to the operator's own TikTok account. See the <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">TikTok Privacy Policy</a> for how TikTok handles data.</p>
 
 <h2>2. Information collected</h2>
-<p>For YouTube, the Tool requests only three scopes:</p>
+<p>For YouTube, the Tool requests only five scopes:</p>
 <ul>
   <li><code>youtube.upload</code>: to upload videos and thumbnails to the operator's channel</li>
   <li><code>youtube.readonly</code>: to confirm, before uploading, that the authorized channel is the operator's own channel (the channel ID is read only and not stored)</li>
   <li><code>yt-analytics.readonly</code>: to read analytics for the operator's own channel and videos (views, retention, subscriber changes, thumbnail impressions and click-through rate) to improve future videos. Results are e-mailed only to the operator and never published or shared</li>
+  <li><code>youtube</code>: to add uploaded videos to the series playlists on the operator's own channel (used only to create playlists and add videos to them)</li>
+  <li><code>youtube.force-ssl</code>: to add the operator's own script-accurate Japanese caption files to uploaded videos, and to post one comment (text prepared by the operator) as the operator's channel on the operator's own videos once they are published. It is never used to edit, delete or rate other users' comments</li>
 </ul>
 <p>For TikTok, the Tool requests only three scopes:</p>
 <ul>
   <li><code>user.info.basic</code>: to confirm that the authorized TikTok account is the operator's own account (the display name and open ID are read only and not stored)</li>
   <li><code>video.upload</code> and <code>video.publish</code>: to post short videos and captions to the operator's account</li>
 </ul>
-<p>It does not access any other user's personal information, watch history, comments or channel statistics on either YouTube or TikTok.</p>
+<p>It does not access any other user's personal information, watch history or channel statistics on either YouTube or TikTok. Public comments left on the operator's own videos may be read as public data to understand topic requests; they are reviewed only by the operator and never published or shared.</p>
 
 <h2>3. Use, storage and sharing</h2>
 <ul>
   <li>The OAuth token is stored only in a file on a server controlled by the operator, readable only by the operator.</li>
   <li>TikTok access and refresh tokens are likewise stored only in a file on that server, readable only by the operator.</li>
-  <li>Tokens are used only to upload and post videos, set thumbnails and read analytics, and are never sold, shared with or disclosed to third parties.</li>
+  <li>Tokens are used only to upload and post videos, set thumbnails and captions, add videos to playlists, post the operator's own comments and read analytics, and are never sold, shared with or disclosed to third parties.</li>
   <li>The Tool uses no cookies or analytics.</li>
 </ul>
 
